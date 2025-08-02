@@ -1,3 +1,15 @@
+PE03- Analysis report
+
+# Input
+The user interacts with the app by typing a task into the input field and clicking the "Add Task" button. Each task is added to a dynamic list. Users can also delete a task by clicking the “Delete” button next to it.
+
+# Process
+The app is built with React and uses the `useState` hook to manage the list of tasks. When a new task is submitted, it is added to the tasks array using the `setTasks` function. When the delete button is clicked, the task is removed from the list using `filter`.
+
+# Output
+The final result is a simple, responsive ToDo List App where users can add and remove tasks in real-time. The interface updates instantly as users interact with the app, and the layout is styled with CSS for readability and clarity.
+
+
 PE02- Analysis report 
 
 # Input
