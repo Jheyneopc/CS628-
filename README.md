@@ -1,3 +1,24 @@
+PE04- Analysis report 
+# Input
+
+Users interact with two screens. In Cities List, they click a city name; that click provides a route parameter (:id). In Add City, users enter name, country, and population in a simple form and submit. The app also starts with two seeded cities so the list is never empty.
+
+# Process
+
+The app stores cities in React state inside App. When the form is submitted, addCity() creates a URL-safe id (slug), converts population to a number, appends the new object to the array, and then redirects back to /cities. Navigation is handled by React Router:
+
+/cities renders the list and an <Outlet/> for nested content.
+
+/cities/:id uses useParams() to read the id, finds the matching city, and renders details in the same layout area.
+
+Unknown routes fall back to a simple 404 component.
+
+# Output
+
+The UI updates immediately: the list shows the new city; after a click, the nested details panel displays its country and a formatted population. Successful adds always return the user to the Cities screen.
+
+
+
 PE03- Analysis report
 
 # Input
