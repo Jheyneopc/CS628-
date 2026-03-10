@@ -1,3 +1,6 @@
+**SmartSpend (React + Node + MongoDB)**
+
+
 PE05
 CS628 – PE05: Recipe Finder 
 Quick Start
